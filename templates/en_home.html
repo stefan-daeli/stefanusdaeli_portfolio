@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/static/css/style.css">
     <!-- googel-material-icons -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 
 </head>
 
@@ -19,8 +22,75 @@
     {% include 'includes/header.html' %}
     <!-- main -->
     <main>
-        <h1>Stefanus Daeli</h1>
-        <img src="/static/img/profile_photo.png" alt="Profile Photo" style="width: 100px;">
+        <img src="/static/img/profile_photo.png" alt="Profile Photo">
+        <h1 class="title">Stefanus Daeli</h1>
+        <h2 class="subtitle">Software Engineer</h2>
+        <p class="description">"The hardest thing is to do nothing."</p>
+        <div class="skills-section">
+            <h3>What I know and what I can do</h3>
+            <ul class="skill-list">
+                <li class="skill-item">Python</li>
+                <li class="skill-item">Django</li>
+                <li class="skill-item">HTML</li>
+                <li class="skill-item">CSS</li>
+                <li class="skill-item">JavaScript</li>
+                <li class="skill-item">SQL</li>
+                <li class="skill-item">Figma (UI / UX Design)</li>
+                <li class="skill-item">Docker</li>
+                <li class="skill-item">Git & Github</li>
+                <li class="skill-item">Notion</li>
+                <li class="skill-item">Technical Project Management</li>
+                <li class="skill-item">Database & Architecture</li>
+                <li class="skill-item">Machine Learning</li>
+                <li class="skill-item">Artificial Intelligence</li>
+            </ul>
+        </div>
+        <div class="projects-section" id="projects">
+            <h3>Projects</h3>
+            <ul class="project-list">
+                <li class="project-item">
+                    <img src="/static/img/latekudo.png" alt="project image">
+                    <div class="description">
+                        <h4>Latekudo</h4>
+                        <a href="https://latekudo.com/en/" class="sources" target="_blank">Website Link</a>
+                        <p>A platform that provides SaaS and Technology Services.</p>
+                        <p class="year">2025</p>
+                    </div>
+                </li>
+                <li class="project-item">
+                    <img src="/static/img/echos_van_java.png" alt="project image">
+                    <div class="description">
+                        <h4>Echos Van Java Network</h4>
+                        <a href="https://network.echosvanjava.id/" class="sources">Website Link</a>
+                        <p>A platform used to search for profiles, especially of Javanese people.</p>
+                        <p class="year">2025</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="contact-section" id="contacts">
+            <h3>Contact Me</h3>
+            <ul class="contact-list">
+                <li class="contact-item">
+                    <a href=""><i class="fa-solid fa-envelope"></i> stefanusdaeli2003@gmail.com</a>
+                </li>
+                <li class="contact-item">
+                    <a href="https://www.linkedin.com/in/stefanus-daeli-5a7361383/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i> Stefanus Daeli</a>
+                </li>
+                <li class="contact-item">
+                    <a href="https://github.com/stefan-daeli" target="_blank"><i class="fa-brands fa-github"></i>
+                        stefan-daeli</a>
+                </li>
+                <li class="contact-item">
+                    <a href="https://www.instagram.com/stefan_daeli/?__pwa=1#" target="_blank"><i
+                            class="fa-brands fa-instagram"></i> stefan_daeli</a>
+                </li>
+                <li class="contact-item">
+                    <a href="https://wa.me/6282210842592" target="_blank"><i class="fa-brands fa-whatsapp"></i>
+                        6282210842592</a>
+                </li>
+        </div>
     </main>
     <!-- footer -->
 </body>
