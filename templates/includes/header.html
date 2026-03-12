@@ -1,12 +1,24 @@
 <header>
     <div class="nav">
+
+        {% if request.path == '/' %}
+        <a href="#projects">Proyek</a>
+        <div class="lang-switch-section">
+            <a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}"><button>ID</button></a>
+            <a href="{% url 'en_home' %}"
+                class="{% if request.path == '/en/' %}active{% endif %}"><button>EN</button></a>
+        </div>
+        <a href="#contacts">Kontak</a>
+        {% else %}
         <a href="#projects">Projects</a>
         <div class="lang-switch-section">
-            <a href="{% url 'home' %}"><button>ID</button></a>
-            <a href="{% url 'en_home' %}"><button>EN</button></a>
+            <a href="{% url 'home' %}" class="{% if request.path == '/' %}active{% endif %}"><button>ID</button></a>
+            <a href="{% url 'en_home' %}"
+                class="{% if request.path == '/en/' %}active{% endif %}"><button>EN</button></a>
         </div>
         <a href="#contacts">Contacts</a>
+        {% endif %}
+
+
     </div>
-
-
 </header>
